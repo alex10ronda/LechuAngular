@@ -16,7 +16,7 @@ export class ProductoService {
 
   constructor(private http: HttpClient) { }
 
-  getAllProductos():Observable<Producto>{
+  getAllProductos():Observable<any>{
     return this.http.get(this.basePath + this.pathListado);
   }
 }
