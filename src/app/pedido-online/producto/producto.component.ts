@@ -11,7 +11,7 @@ import { Producto } from "./../modelo/producto.model";
 })
 export class ProductoComponent implements OnInit {
 
-  productos:Array<any>
+  productos:Array<Producto[]>
 
   constructor(private productoService: ProductoService) { }
 
