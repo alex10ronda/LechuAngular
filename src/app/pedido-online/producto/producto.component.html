@@ -1,4 +1,8 @@
-<p>producto works!</p>
+<form class="example-form">
+  <mat-form-field class="size-input">
+    <input matInput placeholder="Nombre" [(ngModel)]="nombreCliente">
+  </mat-form-field>
+</form>
 <div *ngFor="let producto of productos">
   {{producto.nombre}}
 </div>

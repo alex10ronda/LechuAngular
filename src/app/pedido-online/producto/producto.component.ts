@@ -4,6 +4,7 @@ import { ProductoService } from "./../producto.service";
 import { Producto } from "./../modelo/producto.model";
 
 
+
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
@@ -11,7 +12,8 @@ import { Producto } from "./../modelo/producto.model";
 })
 export class ProductoComponent implements OnInit {
 
-  productos:Array<Producto[]>
+  productos:Array<Producto>
+  nombreCliente:string;
 
   constructor(private productoService: ProductoService) { }
 
