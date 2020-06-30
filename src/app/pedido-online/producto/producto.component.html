@@ -1,8 +1,14 @@
+<h2>Tapas y platos</h2>
+Disfruta de nuestra gran variedad de tapas y platos:
+
 <form class="example-form">
   <mat-form-field class="size-input">
     <input matInput placeholder="Nombre" [(ngModel)]="nombreCliente">
   </mat-form-field>
 </form>
-<div *ngFor="let producto of productos">
-  {{producto.nombre}}
+
+<div class="card-container" >
+  <div class="card" *ngFor="let producto of productos">
+    <span>{{producto.nombre}}</span>
+  </div>
 </div>
